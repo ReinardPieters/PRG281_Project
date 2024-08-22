@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "income.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\income.cs",
+              "RelativeDocumentMoniker": "PRG281_Project\\income.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\income.cs",
+              "RelativeToolTip": "PRG281_Project\\income.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:20:38.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\Program.cs",
+              "RelativeDocumentMoniker": "PRG281_Project\\Program.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\Program.cs",
+              "RelativeToolTip": "PRG281_Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:20:04.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
