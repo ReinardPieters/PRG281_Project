@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj": {}
+    "c:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj": {
+    "c:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj",
+        "projectUniqueName": "c:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj",
         "projectName": "PRG281_Project",
-        "projectPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj",
+        "projectPath": "c:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\PRG281_Project.csproj",
         "packagesPath": "C:\\Users\\reina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\obj\\",
+        "outputPath": "c:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
