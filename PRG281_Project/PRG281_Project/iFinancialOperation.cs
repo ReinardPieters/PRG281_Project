@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PRG281_Project
 {
-    internal class income
+    interface iFinancialOperation
     {
+        public void Execute();
     }
 }

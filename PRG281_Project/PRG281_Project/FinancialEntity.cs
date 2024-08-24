@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace PRG281_Project
 {
-    internal class income
+    internal class FinancialEntity
     {
+        private string name;
+        private double amount;
+        public void Display()
+        {
+
+        }
     }
 }
