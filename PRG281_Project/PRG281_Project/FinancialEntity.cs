@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace PRG281_Project
 {
-    internal class FinancialEntity
+    abstract class FinancialEntity
     {
-        private string name;
-        private double amount;
-        public void Display()
+        private string name { get; set; }
+        private double amount { get; set; }
+        protected FinancialEntity(string name, double amount)
         {
-
+            this.name = name;
+            this.amount = amount;
         }
+
+
+        public abstract void Display();
+        
+
+      
     }
 }
