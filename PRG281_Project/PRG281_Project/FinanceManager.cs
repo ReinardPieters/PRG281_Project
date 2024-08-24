@@ -11,7 +11,7 @@ namespace PRG281_Project
         private double totalIncome;
         private double totalExpenses;
         private double totalSavings;
-
+        private readonly List<FinancialEntity> transactions;
         public FinanceManager()
         {
         }
