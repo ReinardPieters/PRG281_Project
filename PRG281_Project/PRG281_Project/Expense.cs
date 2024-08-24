@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG281_Project
 {
-    internal class Income:FinancialEntity,
+    internal class Expense
     {
     }
 }
