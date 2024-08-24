@@ -12,17 +12,24 @@ namespace PRG281_Project
         private double totalExpenses;
         private double totalSavings;
         private readonly List<FinancialEntity> transactions;
+
+        private ExpenseMonitor expenseMonitor;
         public FinanceManager()
         {
             transactions = new List<FinancialEntity>();
+            expenseMonitor = new ExpenseMonitor();
+            expenseMonitor.ExpenseExceeded += HandleExpensesExceeded;
         }
 
         public void AddTransaction(FinancialEntity entity)
         {
-          //exception for invalid entry
+            //exception for invalid entry
 
-
-           transactions.Add(entity);
+            if (entity.Amount < 0)
+            {
+                throw new ArgumentException("Transaction amount cannot be negative.");
+            }
+            transactions.Add(entity);
 
             if (entity is Income income)
             {
@@ -31,6 +38,7 @@ namespace PRG281_Project
             else if(entity is Expense expense)
             {
                 totalExpenses += expense.Amount;
+                expenseMonitor.CheckExpenses(totalIncome, totalExpenses);
             }
             else if (entity is Savings save)
             {
@@ -45,7 +53,10 @@ namespace PRG281_Project
             {
                 if (item is Expense expense)
                 {
-                    //trigger spending altert
+                    if (expense.Amount > totalSavings)
+                    {
+                        expenseMonitor.CheckExpenseVsSavings(expense.Amount, totalSavings);
+                    }
                 }
             }
         }
@@ -59,6 +70,10 @@ namespace PRG281_Project
             Console.WriteLine($"Total Expenses: {totalExpenses:C}");
             Console.WriteLine($"Total Savings: {totalSavings:C}");
             Console.WriteLine($"Balance: {(totalIncome - totalExpenses - totalSavings):C}");
+        }
+        private void HandleExpensesExceeded(string message)
+        {
+            Console.WriteLine(message);
         }
     }
 }
