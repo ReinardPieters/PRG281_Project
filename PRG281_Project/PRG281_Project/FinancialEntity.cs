@@ -8,18 +8,16 @@ namespace PRG281_Project
 {
     abstract class FinancialEntity
     {
-        private string name { get; set; }
-        private double amount { get; set; }
+        public string Name { get; }
+        public double Amount { get; }
         protected FinancialEntity(string name, double amount)
         {
-            this.name = name;
-            this.amount = amount;
+            this.Name = name;
+            this.Amount = amount;
         }
-
 
         public abstract void Display();
         
-
-      
+              
     }
 }
