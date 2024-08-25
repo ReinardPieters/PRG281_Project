@@ -34,6 +34,8 @@ namespace PRG281_Project
             if (entity is Income income)
             {
                 totalIncome += income.Amount; 
+                UserManager userManager = new UserManager();
+                
             }
             else if(entity is Expense expense)
             {

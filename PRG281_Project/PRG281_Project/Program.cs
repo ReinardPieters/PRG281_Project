@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 namespace PRG281_Project
@@ -41,7 +42,6 @@ namespace PRG281_Project
             }
             Console.Clear();
             bool running = false;
-
 
             string username, password;
 

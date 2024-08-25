@@ -10,6 +10,7 @@ namespace PRG281_Project
     internal class UserManager
     {
         private readonly string filePath = "users.json";
+        private User currentUser;
         public void SignUpUser(string username, string password)
         {
             var users = new UserCollection();
@@ -36,9 +37,9 @@ namespace PRG281_Project
         public bool LogIn(string username, string password)
         {
             var users = ReadUsers();
-            var user = users.Users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
 
-            if (user != null && user.Password == password)
+            currentUser = users.Users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password);
+            if (currentUser !=null)
             {
                 Console.WriteLine("Login successful!");
                 return true; // Login successful
@@ -46,9 +47,16 @@ namespace PRG281_Project
             else
             {
                 Console.WriteLine("Invalid username or password.");
+                currentUser = null;
                 return false; // Login failed
             }
         }
+
+        public User GetCurrentUser()
+        {
+            return currentUser;
+        }
+
         public UserCollection ReadUsers() 
         {
             if (File.Exists(filePath)) 
@@ -62,10 +70,11 @@ namespace PRG281_Project
         {
             File.WriteAllText(filePath, JsonConvert.SerializeObject(users, Formatting.Indented));
         }
-        public void UpdateIncome(string username, double income)
+
+        public void UpdateIncome(double income)
         {
             var users = ReadUsers();
-            var user = users.Users.FirstOrDefault(u => u.Username == username);
+            var user = users.Users.FirstOrDefault(u => u.Username == currentUser.Username);
             if (user != null)
             {
                 user.TotalIncome = income;
@@ -75,10 +84,10 @@ namespace PRG281_Project
         }
 
         // Update expenses and recalculate savings for a user
-        public void UpdateExpenses(string username, double expenses)
+        public void UpdateExpenses(double expenses)
         {
             var users = ReadUsers();
-            var user = users.Users.FirstOrDefault(u => u.Username == username);
+            var user = users.Users.FirstOrDefault(u => u.Username == currentUser.Username);
             if (user != null)
             {
                 user.TotalExpenses = expenses;
