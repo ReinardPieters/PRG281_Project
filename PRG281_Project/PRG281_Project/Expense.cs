@@ -17,12 +17,7 @@ namespace PRG281_Project
             Console.WriteLine($"{Name} added to expenses: {Amount:C}");
         }
 
-       /* protected virtual void OnOverspendingAlert(EventArgs e)
-        {
-            ExpenseExceeded?.Invoke(this, e);
-        }*/
-
-        public override void Display()
+            public override void Display()
         {
             Console.WriteLine($"Expense: {Name} - Amount: {Amount:C}");
         }
