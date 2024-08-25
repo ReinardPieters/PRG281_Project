@@ -13,3 +13,6 @@ C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj
 C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj\Debug\net6.0\PRG281_Project.pdb
 C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj\Debug\net6.0\PRG281_Project.genruntimeconfig.cache
 C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj\Debug\net6.0\ref\PRG281_Project.dll
+C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj\Debug\net6.0\PRG281_Project.csproj.AssemblyReference.cache
+C:\Users\reina\OneDrive\Desktop\PRG281_Project\PRG281_Project\PRG281_Project\obj\Debug\net6.0\PRG281_P.1A25D5B1.Up2Date

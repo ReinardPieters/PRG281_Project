@@ -1,7 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.Design;
 using System.Reflection;
+using System.Xml;
+
 namespace PRG281_Project
 {
     public enum MenuOptions
@@ -28,8 +31,60 @@ namespace PRG281_Project
     {
         static void Main()
         {
-            bool running = true;
+            Console.Write("Welcome to the our Project for PR281");
+            Console.WriteLine("");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("=");
 
+                Thread.Sleep(333);
+            }
+            Console.Clear();
+            bool running = false;
+
+
+            string username, password;
+
+            Console.WriteLine("Do you have an account? (Y/N)");
+            string answer = Console.ReadLine();
+
+            if (answer == "N")
+            {
+                Console.Clear();
+                Console.WriteLine("Please enter your Username:");
+                username = Console.ReadLine();
+                Console.WriteLine("Please enter your Password");
+                password = Console.ReadLine();
+                UserManager userManager = new UserManager();
+                userManager.SignUpUser(username, password);
+            }
+            else if (answer == "Y")
+            {
+                Console.Clear();
+                Console.WriteLine("Please enter your Username:");
+                username = Console.ReadLine();
+                Console.WriteLine("Please enter your Password");
+                password = Console.ReadLine();
+                UserManager userManager = new UserManager();
+                bool loginSuccess = userManager.LogIn(username, password);
+                if (loginSuccess)
+                { 
+                    Console.WriteLine("Welcome to the application!");
+                    running = true;
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    
+                }
+                else if(!loginSuccess)
+                {
+                    Console.WriteLine("Please check your username or password");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice");
+                return;
+            }
             while (running)
             {
                 Console.WriteLine("Menu:");
@@ -72,6 +127,7 @@ namespace PRG281_Project
                     else
                     {
                         Console.WriteLine("Invalid option. Please choose a valid menu option.");
+                        Console.Clear();
                     }
                 }
                 catch (FormatException)
@@ -83,6 +139,7 @@ namespace PRG281_Project
 
                 Console.WriteLine();
             }
+
         }
         public static string GetEnumDescription(Enum value)
         {
