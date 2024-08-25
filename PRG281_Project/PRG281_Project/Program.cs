@@ -47,7 +47,7 @@ namespace PRG281_Project
 
             Console.WriteLine("Do you have an account? (Y/N)");
             string answer = Console.ReadLine();
-
+            UserManager userManager = new UserManager();
             if (answer == "N")
             {
                 Console.Clear();
@@ -55,7 +55,7 @@ namespace PRG281_Project
                 username = Console.ReadLine();
                 Console.WriteLine("Please enter your Password");
                 password = Console.ReadLine();
-                UserManager userManager = new UserManager();
+              
                 userManager.SignUpUser(username, password);
             }
             else if (answer == "Y")
@@ -65,7 +65,7 @@ namespace PRG281_Project
                 username = Console.ReadLine();
                 Console.WriteLine("Please enter your Password");
                 password = Console.ReadLine();
-                UserManager userManager = new UserManager();
+          
                 bool loginSuccess = userManager.LogIn(username, password);
                 if (loginSuccess)
                 { 
@@ -87,7 +87,7 @@ namespace PRG281_Project
             }
 
             FinanceManager manager = new FinanceManager();
-            UserManager userManager = new UserManager();
+            
             while (running)
             {
                 Console.WriteLine("Menu:");
@@ -111,7 +111,7 @@ namespace PRG281_Project
                                 Console.WriteLine("Enter income source:");
                                 string incomeSource = Console.ReadLine();
                                 Console.WriteLine("Enter your amount:");
-                                decimal IncomeAmount = decimal.Parse(Console.ReadLine());
+                                double IncomeAmount = double.Parse(Console.ReadLine());
                                 manager.AddTransaction(new Income(incomeSource, IncomeAmount));
                                 userManager.UpdateIncome(IncomeAmount);
                                 break;
@@ -134,7 +134,7 @@ namespace PRG281_Project
                                 break;
                             case MenuOptions.DisplaySummary:
                                 Console.WriteLine("You chose to Display Summary.");
-                                manager.DisplaySummary;
+                                manager.DisplaySummary();
                                 break;
                             case MenuOptions.StartMonitoringExpenses:
                                 Console.WriteLine("You chose to Start Monitoring Expenses.");
