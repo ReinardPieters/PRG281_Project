@@ -13,10 +13,12 @@ namespace PRG281_Project
 
         public void Execute()
         {
+            Console.WriteLine($"{Name} has added to savings: {Amount}");
         }
 
         public override void Display()
         {
+            Console.WriteLine($"Savings goal: {Name} and amount{Amount}");
         }
     
     }

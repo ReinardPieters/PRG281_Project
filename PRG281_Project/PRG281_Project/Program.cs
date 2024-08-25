@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 namespace PRG281_Project
@@ -42,6 +41,7 @@ namespace PRG281_Project
             }
             Console.Clear();
             bool running = false;
+
 
             string username, password;
 
@@ -85,6 +85,9 @@ namespace PRG281_Project
                 Console.WriteLine("Invalid choice");
                 return;
             }
+
+            FinanceManager manager = new FinanceManager();
+            UserManager userManager = new UserManager();
             while (running)
             {
                 Console.WriteLine("Menu:");
@@ -105,15 +108,33 @@ namespace PRG281_Project
                         {
                             case MenuOptions.AddIncome:
                                 Console.WriteLine("You chose to Add Income.");
+                                Console.WriteLine("Enter income source:");
+                                string incomeSource = Console.ReadLine();
+                                Console.WriteLine("Enter your amount:");
+                                decimal IncomeAmount = decimal.Parse(Console.ReadLine());
+                                manager.AddTransaction(new Income(incomeSource, IncomeAmount));
+                                userManager.UpdateIncome(IncomeAmount);
                                 break;
                             case MenuOptions.AddExpense:
                                 Console.WriteLine("You chose to Add Expense.");
+                                Console.WriteLine("Enter expense name:");
+                                string expenseName = Console.ReadLine();
+                                Console.WriteLine("Enter expense amount:");
+                                double expenseAmount = double.Parse(Console.ReadLine());
+                                manager.AddTransaction(new Expense(expenseName, expenseAmount));
+                                userManager.UpdateExpenses(expenseAmount);
                                 break;
                             case MenuOptions.SetSavings:
                                 Console.WriteLine("You chose to Add Savings.");
+                                Console.WriteLine("Enter your savings goal:");
+                                string savingsGoal = Console.ReadLine();
+                                Console.WriteLine("Enter your savings Amount:");
+                                double savingsAmount = double.Parse(Console.ReadLine());
+                                manager.AddTransaction(new Savings(savingsGoal, savingsAmount));
                                 break;
                             case MenuOptions.DisplaySummary:
                                 Console.WriteLine("You chose to Display Summary.");
+                                manager.DisplaySummary;
                                 break;
                             case MenuOptions.StartMonitoringExpenses:
                                 Console.WriteLine("You chose to Start Monitoring Expenses.");
