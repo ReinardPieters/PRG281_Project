@@ -23,15 +23,18 @@ namespace PRG281_Project
                 Console.WriteLine("Username already exists. Please choose a different username.");
                 return;
             }
-            users.Users.Add(new User
+            var newUser = new User
             {
                 Username = username,
                 Password = password,
                 TotalIncome = 0.0,
                 TotalExpenses = 0.0,
-                TotalSavings = 0.0
-            });
+                TotalSavings = 0.0 // Initialize with a default goal
+            };
+
+            users.Users.Add(newUser);
             SaveUsers(users);
+            currentUser = newUser;
             Console.WriteLine("Successfully signed in");
         }
         public bool LogIn(string username, string password)
