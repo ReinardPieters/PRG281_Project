@@ -13,7 +13,7 @@ namespace PRG281_Project
         private User currentUser;
         public void SignUpUser(string username, string password)
         {
-            var users = new UserCollection();
+            var users = File.Exists(filePath) ? ReadUsers() : new UserCollection();
             if (File.Exists(filePath))
             {
                 users = ReadUsers();
@@ -44,7 +44,7 @@ namespace PRG281_Project
             currentUser = users.Users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password);
             if (currentUser !=null)
             {
-                Console.WriteLine("Login successful!");
+                Console.WriteLine("Login successful. Current user: " + GetCurrentUser()?.Username);
                 return true; // Login successful
             }
             else

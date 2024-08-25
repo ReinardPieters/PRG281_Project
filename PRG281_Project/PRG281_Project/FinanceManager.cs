@@ -66,8 +66,7 @@ namespace PRG281_Project
        
 
         public void DisplaySummary()
-        {
-            Console.WriteLine("Your MoneyMentor summary:");
+        { 
             Console.WriteLine($"Total Income: {totalIncome:C}");
             Console.WriteLine($"Total Expenses: {totalExpenses:C}");
             Console.WriteLine($"Total Savings: {totalSavings:C}");

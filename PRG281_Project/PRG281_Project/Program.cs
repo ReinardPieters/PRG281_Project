@@ -21,9 +21,6 @@ namespace PRG281_Project
         [Description("Display Summary")]
         DisplaySummary,
 
-        [Description("Start Monitoring Expenses")]
-        StartMonitoringExpenses,
-
         [Description("Exit")]
         Exit
     }
@@ -68,8 +65,8 @@ namespace PRG281_Project
           
                 bool loginSuccess = userManager.LogIn(username, password);
                 if (loginSuccess)
-                { 
-                    Console.WriteLine("Welcome to the application!");
+                {
+                    
                     running = true;
                     Thread.Sleep(1000);
                     Console.Clear();
@@ -133,11 +130,12 @@ namespace PRG281_Project
                                 manager.AddTransaction(new Savings(savingsGoal, savingsAmount));
                                 break;
                             case MenuOptions.DisplaySummary:
-                                Console.WriteLine("You chose to Display Summary.");
+                                Console.Clear();
+                                Console.WriteLine($"{userManager.GetCurrentUser()?.Username}'s MoneyMentor summary:");
                                 manager.DisplaySummary();
-                                break;
-                            case MenuOptions.StartMonitoringExpenses:
-                                Console.WriteLine("You chose to Start Monitoring Expenses.");
+                                Console.WriteLine("Press enter to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case MenuOptions.Exit:
                                 Console.WriteLine("Exiting...");
