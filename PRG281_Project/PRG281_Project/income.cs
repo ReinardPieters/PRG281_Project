@@ -13,10 +13,14 @@ namespace PRG281_Project
 
         public void Execute()
         {
+            Console.WriteLine($"{Name} added to income: {Amount:C}");
+
         }
 
         public override void Display()
         {
+            Console.WriteLine($"Income: {Name} - Amount: {Amount:C}");
+
         }
     }
 }

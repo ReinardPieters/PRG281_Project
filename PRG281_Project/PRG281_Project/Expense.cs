@@ -9,22 +9,25 @@ namespace PRG281_Project
 {
     internal class Expense: FinancialEntity, iFinancialOperation
     {
-
+   
         public Expense(string name, double amount) : base(name, amount) { }
 
         public void Execute()
         {
-           
+            Console.WriteLine($"{Name} added to expenses: {Amount:C}");
         }
 
-        protected virtual void OnOverspendingAlert(EventArgs e)
+       /* protected virtual void OnOverspendingAlert(EventArgs e)
         {
-        }
+            ExpenseExceeded?.Invoke(this, e);
+        }*/
 
         public override void Display()
         {
+            Console.WriteLine($"Expense: {Name} - Amount: {Amount:C}");
         }
-    
 
-}
+      
+    
+    }
 }
