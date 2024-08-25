@@ -95,5 +95,16 @@ namespace PRG281_Project
                 SaveUsers(users);
             }
         }
+
+        public void SetSavingsGoal(double goal)
+        {
+            var users = ReadUsers();
+            var user = users.Users.FirstOrDefault(u => u.Username == currentUser.Username);
+            if (user != null)
+            {
+                user.TotalSavings = goal;
+                SaveUsers(users);
+            }
+        }
     }
 }
