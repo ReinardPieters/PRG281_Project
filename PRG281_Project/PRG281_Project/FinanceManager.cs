@@ -13,8 +13,8 @@ namespace PRG281_Project
         private double totalSavings;
         private readonly List<FinancialEntity> transactions;
         private readonly UserManager userManager;
-
         private ExpenseMonitor expenseMonitor;
+        private readonly object lockObj = new object();
         public FinanceManager(UserManager userManager)
         {
             this.userManager = userManager;
@@ -29,35 +29,41 @@ namespace PRG281_Project
         public void AddTransaction(FinancialEntity entity)
         {
             //exception for invalid entry
-
-            if (entity.Amount < 0)
+            ThreadPool.QueueUserWorkItem(state =>
             {
-                throw new ArgumentException("Transaction amount cannot be negative.");
-            }
-            transactions.Add(entity);
-
-            if (entity is Income income)
-            {
-                totalIncome += income.Amount;
-                userManager.UpdateIncome(income.Amount);
-                
-            }
-            else if(entity is Expense expense)
-            {
-                if(!expenseMonitor.CheckExpenses(userManager.GetCurrentUser().TotalIncome, expense.Amount))
+                lock (lockObj) 
                 {
-                    Console.WriteLine("Expense not added because it exceeds your income or savings.");
-                    return;
+                    if (entity.Amount < 0)
+                    {
+                        throw new ArgumentException("Transaction amount cannot be negative.");
+                    }
+                    transactions.Add(entity);
+
+                    if (entity is Income income)
+                    {
+                        totalIncome += income.Amount;
+                        userManager.UpdateIncome(income.Amount);
+
+                    }
+                    else if (entity is Expense expense)
+                    {
+                        if (!expenseMonitor.CheckExpenses(userManager.GetCurrentUser().TotalIncome, expense.Amount))
+                        {
+                            Console.WriteLine("Expense not added because it exceeds your income or savings.");
+                            return;
+                        }
+                        totalExpenses += expense.Amount;
+                        userManager.UpdateExpenses(expense.Amount);
+                    }
+                    else if (entity is Savings save)
+                    {
+                        totalSavings += save.Amount;
+                        userManager.SetSavingsGoal(save.Amount);
+                    }
+                    entity.Display();
                 }
-                totalExpenses += expense.Amount;
-                userManager.UpdateExpenses(expense.Amount);
-            }
-            else if (entity is Savings save)
-            {
-                totalSavings += save.Amount;
-                userManager.SetSavingsGoal(save.Amount);
-            }
-            entity.Display();
+            });
+            
         }
 
         public void DisplaySummary()
