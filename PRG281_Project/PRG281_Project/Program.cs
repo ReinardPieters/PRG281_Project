@@ -39,12 +39,12 @@ namespace PRG281_Project
             Console.Clear();
             bool running = false;
 
-
-            string username, password;
+            UserManager userManager = new UserManager();
+            
 
             Console.WriteLine("Do you have an account? (Y/N)");
-            string answer = Console.ReadLine();
-            UserManager userManager = new UserManager();
+            string answer = Console.ReadLine().ToUpper();
+            string username, password;
             if (answer == "N")
             {
                 Console.Clear();
@@ -66,7 +66,6 @@ namespace PRG281_Project
                 bool loginSuccess = userManager.LogIn(username, password);
                 if (loginSuccess)
                 {
-                    
                     running = true;
                     Thread.Sleep(1000);
                     Console.Clear();
@@ -83,7 +82,7 @@ namespace PRG281_Project
                 return;
             }
 
-            FinanceManager manager = new FinanceManager();
+            FinanceManager manager = new FinanceManager(userManager);
             
             while (running)
             {

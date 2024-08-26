@@ -9,19 +9,26 @@ namespace PRG281_Project
     internal class ExpenseMonitor
     {
         public event Action<string> ExpenseExceeded;
-        public void CheckExpenses(double totalIncome, double totalExpenses)
+
+        public bool CheckExpenses(double totalIncome, double expenseAmount)
         {
-            if (totalExpenses > totalIncome)
+            if (expenseAmount > totalIncome)
             {
                 ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded your income!");
+                return false; // Expense exceeds income
             }
+            return true; // Expense is within income
         }
-        public void CheckExpenseVsSavings(double expenseAmount, double totalSavings)
+
+        public bool CheckExpenseVsSavings(double expenseAmount, double totalSavings)
         {
             if (expenseAmount > totalSavings)
             {
                 ExpenseExceeded?.Invoke($"Warning: The expense of {expenseAmount:C} exceeds your savings!");
+                return false; // Expense exceeds savings
             }
+            return true; // Expense is within savings
         }
+
     }
 }

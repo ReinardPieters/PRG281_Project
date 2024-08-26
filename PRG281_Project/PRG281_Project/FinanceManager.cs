@@ -12,13 +12,18 @@ namespace PRG281_Project
         private double totalExpenses;
         private double totalSavings;
         private readonly List<FinancialEntity> transactions;
+        private readonly UserManager userManager;
 
         private ExpenseMonitor expenseMonitor;
-        public FinanceManager()
+        public FinanceManager(UserManager userManager)
         {
+            this.userManager = userManager;
             transactions = new List<FinancialEntity>();
             expenseMonitor = new ExpenseMonitor();
-            expenseMonitor.ExpenseExceeded += HandleExpensesExceeded;
+            expenseMonitor.ExpenseExceeded += message => 
+            {
+                Console.WriteLine(message);
+            };
         }
 
         public void AddTransaction(FinancialEntity entity)
@@ -33,37 +38,27 @@ namespace PRG281_Project
 
             if (entity is Income income)
             {
-                totalIncome += income.Amount; 
-                UserManager userManager = new UserManager();
+                totalIncome += income.Amount;
+                userManager.UpdateIncome(income.Amount);
                 
             }
             else if(entity is Expense expense)
             {
+                if(!expenseMonitor.CheckExpenses(userManager.GetCurrentUser().TotalIncome, expense.Amount))
+                {
+                    Console.WriteLine("Expense not added because it exceeds your income or savings.");
+                    return;
+                }
                 totalExpenses += expense.Amount;
-                expenseMonitor.CheckExpenses(totalIncome, totalExpenses);
+                userManager.UpdateExpenses(expense.Amount);
             }
             else if (entity is Savings save)
             {
                 totalSavings += save.Amount;
+                userManager.SetSavingsGoal(save.Amount);
             }
             entity.Display();
         }
-
-        public void MonitorExpenses()
-        {
-           foreach(var item in transactions)
-            {
-                if (item is Expense expense)
-                {
-                    if (expense.Amount > totalSavings)
-                    {
-                        expenseMonitor.CheckExpenseVsSavings(expense.Amount, totalSavings);
-                    }
-                }
-            }
-        }
-
-       
 
         public void DisplaySummary()
         { 
