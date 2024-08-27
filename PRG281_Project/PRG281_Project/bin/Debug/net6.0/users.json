@@ -6,6 +6,20 @@
       "TotalIncome": 4000.0,
       "TotalExpenses": 21312.0,
       "TotalSavings": -17312.0
+    },
+    {
+      "Username": "mike",
+      "Password": "123",
+      "TotalIncome": 1000.0,
+      "TotalExpenses": 0.0,
+      "TotalSavings": 1000.0
+    },
+    {
+      "Username": "me",
+      "Password": "123",
+      "TotalIncome": 20000.0,
+      "TotalExpenses": 0.0,
+      "TotalSavings": 20000.0
     }
   ]
 }

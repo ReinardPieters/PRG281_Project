@@ -47,13 +47,17 @@ namespace PRG281_Project
                     }
                     else if (entity is Expense expense)
                     {
-                        if (!expenseMonitor.CheckExpenses(userManager.GetCurrentUser().TotalIncome, expense.Amount))
+                        double remainingIncome = userManager.GetCurrentUser().TotalIncome - userManager.GetCurrentUser().TotalExpenses;
+
+                        if (expense.Amount <= remainingIncome)
+                        {
+                            totalExpenses += expense.Amount;
+                            userManager.UpdateExpenses(expense.Amount);
+                        }
+                        else
                         {
                             Console.WriteLine("Expense not added because it exceeds your income or savings.");
-                            return;
                         }
-                        totalExpenses += expense.Amount;
-                        userManager.UpdateExpenses(expense.Amount);
                     }
                     else if (entity is Savings save)
                     {

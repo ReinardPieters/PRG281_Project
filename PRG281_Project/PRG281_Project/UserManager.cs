@@ -70,9 +70,11 @@ namespace PRG281_Project
             }
             return new UserCollection();
         }
-        private void SaveUsers(UserCollection users) 
+        private void SaveUsers(UserCollection users)
         {
-            File.WriteAllText(filePath, JsonConvert.SerializeObject(users, Formatting.Indented));
+            string tempFilePath = Path.GetTempFileName();
+            File.WriteAllText(tempFilePath, JsonConvert.SerializeObject(users, Formatting.Indented));
+            
         }
 
         public void UpdateIncome(double income)
@@ -82,7 +84,6 @@ namespace PRG281_Project
             if (user != null)
             {
                 user.TotalIncome = income;
-                user.TotalSavings = user.TotalIncome - user.TotalExpenses;
                 SaveUsers(users);
             }
         }
