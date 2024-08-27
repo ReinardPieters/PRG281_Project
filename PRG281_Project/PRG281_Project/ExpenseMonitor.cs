@@ -10,22 +10,23 @@ namespace PRG281_Project
     {
         public event Action<string> ExpenseExceeded;
 
-        public bool CheckExpenses(double totalIncome, double expenseAmount)
-        {
-            if (expenseAmount > totalIncome)
-            {
-                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded your income!");
-                return false; // Expense exceeds income
-            }
-            return true; // Expense is within income
-        }
         public void CheckExpensesExceedingThreshold(double totalIncome, double totalExpenses)
         {
-            double threshold = totalIncome * 0.30; // 30% of income
+            double thirtyPercent = totalIncome * 0.30;
+            double fortyPercent = totalIncome * 0.40;
+            double fiftyPercent = totalIncome * 0.50;
 
-            if (totalExpenses > threshold)
+            if (totalExpenses > fiftyPercent)
             {
-                ExpenseExceeded?.Invoke($"Warning: Your expenses have exceeded 30% of your income!");
+                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 50% of your income!");
+            }
+            else if (totalExpenses > fortyPercent)
+            {
+                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 40% of your income!");
+            }
+            else if (totalExpenses > thirtyPercent)
+            {
+                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 30% of your income!");
             }
         }
     }
