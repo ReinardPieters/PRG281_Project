@@ -11,7 +11,7 @@ namespace PRG281_Project
     {
         private readonly string filePath = "users.json";
         private User currentUser;
-        public void SignUpUser(string username, string password)
+        public bool SignUpUser(string username, string password)
         {
             var users = File.Exists(filePath) ? ReadUsers() : new UserCollection();
             if (File.Exists(filePath))
@@ -21,7 +21,7 @@ namespace PRG281_Project
             if (users.Users.Any(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase)))
             {
                 Console.WriteLine("Username already exists. Please choose a different username.");
-                return;
+                return false;
             }
             var newUser = new User
             {
@@ -36,6 +36,7 @@ namespace PRG281_Project
             SaveUsers(users);
             currentUser = newUser;
             Console.WriteLine("Successfully signed in");
+            return true;
         }
         public bool LogIn(string username, string password)
         {

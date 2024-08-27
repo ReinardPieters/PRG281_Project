@@ -52,9 +52,17 @@ namespace PRG281_Project
                 username = Console.ReadLine();
                 Console.WriteLine("Please enter your Password");
                 password = Console.ReadLine();
-              
-                userManager.SignUpUser(username, password);
-                running = true;
+
+                bool signUpSuccess = userManager.SignUpUser(username, password);
+                if (signUpSuccess)
+                {
+                    running = true;
+                }
+                else
+                {
+                    running = false;
+                    Console.WriteLine("Account creation failed. Exiting...");
+                }
             }
             else if (answer == "Y")
             {
