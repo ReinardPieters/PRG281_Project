@@ -19,5 +19,14 @@ namespace PRG281_Project
             }
             return true; // Expense is within income
         }
+        public void CheckExpensesExceedingThreshold(double totalIncome, double totalExpenses)
+        {
+            double threshold = totalIncome * 0.30; // 30% of income
+
+            if (totalExpenses > threshold)
+            {
+                ExpenseExceeded?.Invoke($"Warning: Your expenses have exceeded 30% of your income!");
+            }
+        }
     }
 }
