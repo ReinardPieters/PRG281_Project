@@ -53,7 +53,7 @@ namespace PRG281_Project
                         {
                             totalExpenses += expense.Amount;
                             userManager.UpdateExpenses(totalExpenses); // Update total expenses in userManager
-                            expenseMonitor.CheckExpensesExceedingThreshold(remainingIncome, totalExpenses);
+                            expenseMonitor.CheckExpensesExceedingThreshold(totalIncome, totalExpenses);
                         }
                         else
                         {
