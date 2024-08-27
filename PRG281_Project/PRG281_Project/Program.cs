@@ -54,6 +54,7 @@ namespace PRG281_Project
                 password = Console.ReadLine();
               
                 userManager.SignUpUser(username, password);
+                running = true;
             }
             else if (answer == "Y")
             {
