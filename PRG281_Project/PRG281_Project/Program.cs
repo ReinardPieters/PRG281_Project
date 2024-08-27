@@ -61,12 +61,14 @@ namespace PRG281_Project
                 {
                     running = true;
                     Console.WriteLine("You have Successfully created an account!");
+                    Thread.Sleep(500);
                     Console.Clear();
                 }
                 else
                 {
                     running = false;
                     Console.WriteLine("Account creation failed. Exiting...");
+                    Thread.Sleep(500);
                 }
             }
             else if (answer == "Y")
@@ -160,7 +162,6 @@ namespace PRG281_Project
                                 break;
                             case MenuOptions.DisplayTotalSummery:
                                 userManager.PrintCurrentUserFinancialSummary();
-                                Console.WriteLine("#######SLIP##########");
                                 Console.WriteLine("Press enter to continue");
                                 Console.ReadLine();
                                 Console.Clear();

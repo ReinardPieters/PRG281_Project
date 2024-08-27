@@ -19,8 +19,5 @@ namespace PRG281_Project
             }
             return true; // Expense is within income
         }
-
-      
-
     }
 }

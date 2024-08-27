@@ -51,7 +51,7 @@ namespace PRG281_Project
 
             if (user != null)
             {
-                Console.WriteLine($"Financial Summary for {user.Username}:");
+                Console.WriteLine("#######SLIP##########");
                 Console.WriteLine($"Total Income: {user.TotalIncome:C}");
                 Console.WriteLine($"Total Expenses: {user.TotalExpenses:C}");
                 Console.WriteLine($"Savings Goal: {user.TotalSavings:C}");
