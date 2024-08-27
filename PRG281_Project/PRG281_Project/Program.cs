@@ -57,6 +57,7 @@ namespace PRG281_Project
                 if (signUpSuccess)
                 {
                     running = true;
+                    Console.Clear();
                 }
                 else
                 {
@@ -119,6 +120,9 @@ namespace PRG281_Project
                                 double IncomeAmount = double.Parse(Console.ReadLine());
                                 manager.AddTransaction(new Income(incomeSource, IncomeAmount));
                                 userManager.UpdateIncome(IncomeAmount);
+                                Console.WriteLine("Press enter to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case MenuOptions.AddExpense:
                                 Console.WriteLine("You chose to Add Expense.");
@@ -128,6 +132,9 @@ namespace PRG281_Project
                                 double expenseAmount = double.Parse(Console.ReadLine());
                                 manager.AddTransaction(new Expense(expenseName, expenseAmount));
                                 userManager.UpdateExpenses(expenseAmount);
+                                Console.WriteLine("Press enter to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case MenuOptions.SetSavings:
                                 Console.WriteLine("You chose to Add Savings.");
@@ -136,9 +143,11 @@ namespace PRG281_Project
                                 Console.WriteLine("Enter your savings Amount:");
                                 double savingsAmount = double.Parse(Console.ReadLine());
                                 manager.AddTransaction(new Savings(savingsGoal, savingsAmount));
+                                Console.WriteLine("Press enter to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case MenuOptions.DisplaySummary:
-                                Console.Clear();
                                 Console.WriteLine($"{userManager.GetCurrentUser()?.Username}'s MoneyMentor summary:");
                                 manager.DisplaySummary();
                                 Console.WriteLine("Press enter to continue.");
