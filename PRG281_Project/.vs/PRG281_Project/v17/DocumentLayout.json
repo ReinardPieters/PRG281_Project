@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\financemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\financemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\ifinancialoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\ifinancialoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\ifinancialoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\ifinancialoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\financialentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\financialentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\financemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|solutionrelative:prg281_project\\financemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A4A208D-C1EC-49EC-8F96-E46ADB46DFDD}|PRG281_Project\\PRG281_Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg281_project\\prg281_project\\prg281_project\\expensemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\UserSession.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\UserSession.cs",
@@ -86,19 +86,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\UserManager.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\UserManager.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\UserManager.cs",
               "RelativeToolTip": "PRG281_Project\\UserManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAuwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T14:51:43.89Z"
+              "WhenOpened": "2024-08-25T14:51:43.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Savings.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\Savings.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\Savings.cs",
@@ -110,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UserCollection.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\UserCollection.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\UserCollection.cs",
@@ -122,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\User.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\User.cs",
@@ -146,19 +147,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "FinanceManager.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\FinanceManager.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\FinanceManager.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\FinanceManager.cs",
               "RelativeToolTip": "PRG281_Project\\FinanceManager.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowBgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T17:32:20.582Z"
+              "WhenOpened": "2024-08-24T17:32:20.582Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FinancialEntity.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\FinancialEntity.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\FinancialEntity.cs",
@@ -170,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "iFinancialOperation.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\iFinancialOperation.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\iFinancialOperation.cs",
@@ -182,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "income.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\income.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\income.cs",
@@ -194,16 +196,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\Program.cs",
               "RelativeDocumentMoniker": "PRG281_Project\\Program.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\Program.cs",
               "RelativeToolTip": "PRG281_Project\\Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowJMAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowJMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T09:20:04.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T09:20:04.264Z"
             }
           ]
         }

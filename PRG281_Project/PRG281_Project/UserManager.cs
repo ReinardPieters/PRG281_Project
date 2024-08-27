@@ -60,19 +60,25 @@ namespace PRG281_Project
         {
             return currentUser;
         }
-
+        private readonly object fileLock = new object();
         public UserCollection ReadUsers() 
         {
-            if (File.Exists(filePath)) 
+            lock (fileLock)
             {
-                var json = File.ReadAllText(filePath);
-                return JsonConvert.DeserializeObject<UserCollection>(json) ?? new UserCollection();
+                if (File.Exists(filePath))
+                {
+                    var json = File.ReadAllText(filePath);
+                    return JsonConvert.DeserializeObject<UserCollection>(json) ?? new UserCollection();
+                }
+                return new UserCollection();
             }
-            return new UserCollection();
         }
-        private void SaveUsers(UserCollection users) 
+        private void SaveUsers(UserCollection users)
         {
-            File.WriteAllText(filePath, JsonConvert.SerializeObject(users, Formatting.Indented));
+            lock (fileLock)
+            {
+                File.WriteAllText(filePath, JsonConvert.SerializeObject(users, Formatting.Indented));
+            }
         }
 
         public void UpdateIncome(double income)

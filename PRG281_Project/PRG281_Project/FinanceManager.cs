@@ -63,7 +63,6 @@ namespace PRG281_Project
                     entity.Display();
                 }
             });
-            
         }
 
         public void DisplaySummary()
