@@ -30,7 +30,7 @@ namespace PRG281_Project
             }
             else if(totalExpenses >= totalIncome)
             {
-                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 30% of your income!");
+                ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded your income!");
             }
         }
     }
