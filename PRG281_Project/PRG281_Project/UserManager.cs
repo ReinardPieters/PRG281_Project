@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,7 +88,6 @@ namespace PRG281_Project
             if (user != null)
             {
                 user.TotalIncome = income;
-                user.TotalSavings = user.TotalIncome - user.TotalExpenses;
                 SaveUsers(users);
             }
         }
