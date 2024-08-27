@@ -140,7 +140,7 @@
               "RelativeDocumentMoniker": "PRG281_Project\\ExpenseMonitor.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG281_Project\\PRG281_Project\\PRG281_Project\\ExpenseMonitor.cs",
               "RelativeToolTip": "PRG281_Project\\ExpenseMonitor.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T18:04:00.124Z",
               "EditorCaption": ""
@@ -155,8 +155,7 @@
               "RelativeToolTip": "PRG281_Project\\FinanceManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T17:32:20.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T17:32:20.582Z"
             },
             {
               "$type": "Document",
@@ -192,8 +191,7 @@
               "RelativeToolTip": "PRG281_Project\\income.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T09:20:38.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T09:20:38.444Z"
             },
             {
               "$type": "Document",
@@ -205,8 +203,7 @@
               "RelativeToolTip": "PRG281_Project\\Program.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAgwJkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T09:20:04.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T09:20:04.264Z"
             }
           ]
         }

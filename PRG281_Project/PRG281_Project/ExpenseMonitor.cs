@@ -16,15 +16,15 @@ namespace PRG281_Project
             double fortyPercent = totalIncome * 0.40;
             double fiftyPercent = totalIncome * 0.50;
 
-            if (totalExpenses > fiftyPercent)
+            if (totalExpenses < thirtyPercent)
             {
                 ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 50% of your income!");
             }
-            else if (totalExpenses > fortyPercent)
+            else if (totalExpenses < fortyPercent)
             {
                 ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 40% of your income!");
             }
-            else if (totalExpenses > thirtyPercent)
+            else if (totalExpenses < fiftyPercent)
             {
                 ExpenseExceeded?.Invoke("Warning: Your expenses have exceeded 30% of your income!");
             }
