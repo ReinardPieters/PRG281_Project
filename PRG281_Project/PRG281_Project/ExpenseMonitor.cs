@@ -20,15 +20,7 @@ namespace PRG281_Project
             return true; // Expense is within income
         }
 
-        public bool CheckExpenseVsSavings(double expenseAmount, double totalSavings)
-        {
-            if (expenseAmount > totalSavings)
-            {
-                ExpenseExceeded?.Invoke($"Warning: The expense of {expenseAmount:C} exceeds your savings!");
-                return false; // Expense exceeds savings
-            }
-            return true; // Expense is within savings
-        }
+      
 
     }
 }

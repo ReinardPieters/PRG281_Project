@@ -18,7 +18,7 @@ namespace PRG281_Project
 
         public override void Display()
         {
-            Console.WriteLine($"Savings goal: {Name} and amount{Amount}");
+            Console.WriteLine($"Savings goal: {Name} and amount : {Amount}");
         }
     
     }

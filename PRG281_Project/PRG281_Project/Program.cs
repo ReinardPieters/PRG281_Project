@@ -21,7 +21,7 @@ namespace PRG281_Project
         [Description("Display Summary")]
         DisplaySummary,
 
-        [Description("Display current user finance summery")]
+        [Description("Print Slip")]
         DisplayTotalSummery,
 
         [Description("Exit")]
@@ -60,6 +60,7 @@ namespace PRG281_Project
                 if (signUpSuccess)
                 {
                     running = true;
+                    Console.WriteLine("You have Successfully created an account!");
                     Console.Clear();
                 }
                 else
@@ -116,7 +117,7 @@ namespace PRG281_Project
                         switch (choice)
                         {
                             case MenuOptions.AddIncome:
-                                Console.WriteLine("You chose to Add Income.");
+                                Console.WriteLine("You choose to Add Income.");
                                 Console.WriteLine("Enter income source:");
                                 string incomeSource = Console.ReadLine();
                                 Console.WriteLine("Enter your amount:");
@@ -159,6 +160,7 @@ namespace PRG281_Project
                                 break;
                             case MenuOptions.DisplayTotalSummery:
                                 userManager.PrintCurrentUserFinancialSummary();
+                                Console.WriteLine("#######SLIP##########");
                                 Console.WriteLine("Press enter to continue");
                                 Console.ReadLine();
                                 Console.Clear();
