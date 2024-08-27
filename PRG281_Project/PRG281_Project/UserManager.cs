@@ -38,6 +38,29 @@ namespace PRG281_Project
             Console.WriteLine("Successfully signed in");
             return true;
         }
+        public void PrintCurrentUserFinancialSummary()
+        {
+            if (currentUser == null)
+            {
+                Console.WriteLine("No user is currently logged in.");
+                return;
+            }
+
+            var users = ReadUsers();
+            var user = users.Users.FirstOrDefault(u => u.Username == currentUser.Username);
+
+            if (user != null)
+            {
+                Console.WriteLine($"Financial Summary for {user.Username}:");
+                Console.WriteLine($"Total Income: {user.TotalIncome:C}");
+                Console.WriteLine($"Total Expenses: {user.TotalExpenses:C}");
+                Console.WriteLine($"Savings Goal: {user.TotalSavings:C}");
+            }
+            else
+            {
+                Console.WriteLine("User not found.");
+            }
+        }
         public bool LogIn(string username, string password)
         {
             var users = ReadUsers();

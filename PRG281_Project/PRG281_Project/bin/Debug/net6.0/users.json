@@ -3,9 +3,9 @@
     {
       "Username": "Reinard",
       "Password": "12345",
-      "TotalIncome": 1231.0,
-      "TotalExpenses": 21312.0,
-      "TotalSavings": -20081.0
+      "TotalIncome": 0,
+      "TotalExpenses": 0,
+      "TotalSavings": 0
     }
   ]
 }

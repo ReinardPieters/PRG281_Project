@@ -21,6 +21,9 @@ namespace PRG281_Project
         [Description("Display Summary")]
         DisplaySummary,
 
+        [Description("Display current user finance summery")]
+        DisplayTotalSummery,
+
         [Description("Exit")]
         Exit
     }
@@ -151,6 +154,12 @@ namespace PRG281_Project
                                 Console.WriteLine($"{userManager.GetCurrentUser()?.Username}'s MoneyMentor summary:");
                                 manager.DisplaySummary();
                                 Console.WriteLine("Press enter to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
+                                break;
+                            case MenuOptions.DisplayTotalSummery:
+                                userManager.PrintCurrentUserFinancialSummary();
+                                Console.WriteLine("Press enter to continue");
                                 Console.ReadLine();
                                 Console.Clear();
                                 break;
