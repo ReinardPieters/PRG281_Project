@@ -42,18 +42,18 @@ namespace PRG281_Project
                     if (entity is Income income)
                     {
                         totalIncome += income.Amount;
-                        userManager.UpdateIncome(income.Amount);
-
+                        userManager.UpdateIncome(totalIncome); // Update total income in userManager
                     }
+
                     else if (entity is Expense expense)
                     {
-                        double remainingIncome = userManager.GetCurrentUser().TotalIncome - userManager.GetCurrentUser().TotalExpenses;
+                        double remainingIncome = totalIncome - totalExpenses;
 
                         if (expense.Amount <= remainingIncome)
                         {
                             totalExpenses += expense.Amount;
+                            userManager.UpdateExpenses(totalExpenses); // Update total expenses in userManager
                             expenseMonitor.CheckExpensesExceedingThreshold(totalIncome, totalExpenses);
-                            userManager.UpdateExpenses(expense.Amount);
                         }
                         else
                         {
